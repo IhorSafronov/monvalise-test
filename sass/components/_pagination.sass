@@ -1,0 +1,39 @@
+.pagination
+  align-items: center
+  justify-content: center
+  margin-left: 90px
+  margin-bottom: 115px
+  @include respond (tab-port)
+    margin-left: 0
+.page-item
+  margin: 0
+  &:last-child
+    .page-link
+      border: 1.6px solid #C4C7C7
+      border-radius: 100px
+      padding: 7px 13px
+  &:first-child
+    .page-link
+      border: 1.6px solid #C4C7C7
+      border-radius: 100px
+      padding: 7px 13px
+      margin-right: 8px
+.page-link
+  font-family: "Stolzl-Medium"
+  font-size: 10px
+  line-height: 150%
+  color: $main-text-color
+  border: 1.6px solid #C4C7C7
+  border-radius: 50%
+  &.current
+    width: 40px
+    height: 40px
+    border: 1.6px solid #2D3132
+    border-radius: 100px
+.page-link__size
+  width: 34px
+  height: 34px
+  display: flex
+  justify-content: center
+  align-items: center
+  margin-right: 8px

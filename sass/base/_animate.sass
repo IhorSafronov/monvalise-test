@@ -1,0 +1,95 @@
+.animate-toup
+    animation-name: toUp
+    animation-duration: 1s
+    animation-timing-function: ease-out
+    animation-delay: 0s
+    animation-iteration-count: 1
+    animation-direction: normal
+    animation-fill-mode: none
+    animation-play-state: running
+    backface-visibility: hidden
+
+.animate-lefttoright
+    animation-name: leftToRight
+    animation-duration: 1s
+    animation-timing-function: ease-out
+    animation-delay: 0s
+    animation-iteration-count: 1
+    animation-direction: normal
+    animation-fill-mode: none
+    animation-play-state: running
+    backface-visibility: hidden
+
+.animate-righttoleft
+    animation-name: rightToLeft
+    animation-duration: 1s
+    animation-timing-function: ease-out
+    animation-delay: 0s
+    animation-iteration-count: 1
+    animation-direction: normal
+    animation-fill-mode: none
+    animation-play-state: running
+    backface-visibility: hidden
+
+.animate-todown
+    animation-name: toDown
+    animation-duration: 1s
+    animation-timing-function: ease-out
+    animation-delay: 0s
+    animation-iteration-count: 1
+    animation-direction: normal
+    animation-fill-mode: none
+    animation-play-state: running
+    backface-visibility: hidden
+
+@keyframes leftToRight
+    0%
+        opacity: 0
+        transform: translateX(-100px)
+    80%
+        transform: translateX(10px)
+    100%
+        opacity: 1
+        transform: translateX(0)
+
+@keyframes rightToLeft
+    0%
+        opacity: 0
+        transform: translateX(100px)
+    80%
+        transform: translateX(-10px)
+    100%
+        opacity: 1
+        transform: translateX(0)
+
+@keyframes toUp
+    0%
+        opacity: 0
+        transform: translateY(50px)
+    80%
+        transform: translateY(-10px)
+    100%
+        opacity: 1
+        transform: translateY(0)
+
+@keyframes toDown
+    0%
+        opacity: 0
+        transform: translateY(-5px)
+    80%
+        transform: translateY(1px)
+    100%
+        opacity: 1
+        transform: translateY(0)
+
+@keyframes crossBar
+    0%
+        top: -100%
+        left: 0
+        opacity: 0.1
+        transform: rotateZ(90deg)
+    100%
+        left: 0
+        top: 0
+        opacity: 1
+        transform: rotateZ(90deg)

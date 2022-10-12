@@ -1,0 +1,36 @@
+@mixin respond($breakpoint)
+    @if $breakpoint == phone
+        @media only screen and (max-width: 576px)
+            @content
+    @if $breakpoint == tab-port
+        @media only screen and (max-width: 768px)
+            @content
+    @if $breakpoint == tab-land
+        @media only screen and (max-width: 992px)
+            @content
+    @if $breakpoint == desctop
+        @media only screen and (max-width: 1200px)
+            @content
+    @if $breakpoint == big-screen
+        @media only screen and (max-width: 1400px)
+            @content
+    @if $breakpoint == full-screen
+        @media only screen and (min-width: 1401px)
+            @content
+
+@mixin box-sizing($box-model)
+    -webkit-box-sizing: $box-model
+    -moz-box-sizing: $box-model
+    box-sizing: $box-model
+
+@mixin size($width , $height: $width )
+    width: $width
+    height: $height
+
+@mixin fontsize($size: 24, $base: 16)
+    font-size: $size + px
+    font-size: ($size / $base) * 1rem
+
+@mixin css3($property, $value)
+    @each $prefix in -webkit-, -moz-, -ms-, -o-, ''
+        #{$prefix}#{$property}: $value

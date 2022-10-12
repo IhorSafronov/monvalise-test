@@ -1,0 +1,19 @@
+.footer
+  background-color: #EFF1F1
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    padding-top: 72px
+    @include respond (phone)
+      justify-content: center
+  &__column
+    margin-bottom: 30px
+    font-family: "Stolzl-Regular"
+    font-size: 14px
+    line-height: 150%
+    width: 300px
+    a
+      color: $main-text-color
+    &-list
+      margin-bottom: 12px
